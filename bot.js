@@ -7,7 +7,7 @@ client.on('ready',() => {
 });
 var welcomessage = "0"
 var prefix = "!"
-var lastvideoxd = "https://www.youtube.com/watch?v=EpUMsBeDy1g"
+var lastvideoxd = "https://www.youtube.com/watch?v=X-eFwTXPQ88"
 
 
 client.on('guildMemberRemove', member => {
