@@ -6,7 +6,7 @@ client.on('ready',() => {
 	   client.user.setPresence({game: {name: "with Sel | a!help", type: 0}});
 });
 var welcomessage = "0"
-var prefix = "a!"
+var prefix = "!"
 var lastvideoxd = "https://www.youtube.com/watch?v=EpUMsBeDy1g"
 
 
