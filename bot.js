@@ -39,7 +39,7 @@ client.on('message', message => {
   /*
    * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
    */
-  .setColor(0xFFA500)
+  .setColor(0x5CA1EE)
   .setDescription("Yo, what's up guys Jack from Arctoise here! My channel is based on Top 5's, Streams, Let's play and a whole lot more!")
   .setThumbnail("https://cdn.discordapp.com/attachments/373987435299733504/447866468433133579/IREAy5KP_1.jpg")
   /*
