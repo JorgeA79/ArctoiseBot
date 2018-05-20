@@ -61,14 +61,14 @@ client.on('message', message => {
 	if (message.content.startsWith(prefix + 'lastvideo')) {
 	
 		const embed = new Discord.RichEmbed()
-  .setTitle("> Click for last video <")
-  .setAuthor("Selobgo", "https://cdn.discordapp.com/avatars/178135668755660800/983c6252aabb009d8b7507e8f1e14185.jpg")
+   .setTitle("> Click for last video <")
+  .setAuthor("Atherox", "https://cdn.discordapp.com/avatars/181472986920910850/e20d43987fdc80f039ac8465a4c5a232.jpg?size=1024")
   /*
    * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
    */
-  .setColor(0xFFA500)
+ .setColor(0x5CA1EE)
   
-  .setThumbnail("https://cdn.discordapp.com/attachments/361503144615870464/365396318459396098/LYLw4kBe.jpg")
+  .setThumbnail("https://cdn.discordapp.com/attachments/373987435299733504/447866468433133579/IREAy5KP_1.jpg")
   /*
    * Takes a Date object, defaults to current date.
    */
