@@ -20,7 +20,7 @@ client.on('message', message => {
 	if (message.author === client.user) return;
 	if (message.content.startsWith(prefix + 'help')) {
 	
-		 message.channel.send(`Help Menu :wrench: \n **-a!channel**\n **-a!lastvideo**\n **-a!randomvideo**\n **-a!invite**\n **-a!server**\n **-a!ping**\n` + message.author.toString);
+		 message.channel.send(`Help Menu :wrench: \n **-a!channel**\n **-a!lastvideo**\n **-a!randomvideo**\n **-a!invite**\n **-a!server**\n **-a!ping**\n` + message.author.toString());
 	}
 });
 client.on('message', message => {
