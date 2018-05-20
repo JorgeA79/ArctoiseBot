@@ -11,7 +11,7 @@ var lastvideoxd = "https://www.youtube.com/watch?v=EpUMsBeDy1g"
 
 
 client.on('guildMemberAdd', member => {
-    member.guild.channels.get('366830234726694913').send('Hello! **' + member.user.username + '**, Welcome To RoaringArcanine I hope that you will enjoy your stay here and have fun! \nPlease make sure to read the rules'); 
+    member.guild.channels.get('447867771007533056').send('Welcome to The Lair **' + member.user.username + '**! You will be given your role shortly!'); 
 });
 
 client.on('message', message => {
