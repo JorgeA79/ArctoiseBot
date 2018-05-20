@@ -8,23 +8,7 @@ client.on('ready',() => {
 var welcomessage = "0"
 var prefix = "a!"
 var lastvideoxd = "https://www.youtube.com/watch?v=EpUMsBeDy1g"
-var randomVideo = [
-"https://www.youtube.com/watch?v=hjwQZJKWLLs",
-"https://www.youtube.com/watch?v=mf7w6NXaZNw",
-"https://www.youtube.com/watch?v=ntRziY0j-ys",
-"https://www.youtube.com/watch?v=vBN-TuXn5Iw",
-"https://www.youtube.com/watch?v=vF6SevrW_dU",
-"https://www.youtube.com/watch?v=FOVP51OCdd0",
-"https://www.youtube.com/watch?v=GxCE_DFTAHc&list=PLu5RkmTClSDmpkUQ5-RdEYZxjP3KQT8VZ",
-"https://www.youtube.com/watch?v=GVNk2uThkT8&list=PLu5RkmTClSDlpeQijJHObJFuB161PzJKU",
-"https://www.youtube.com/watch?v=xPALB43arI8&list=PLu5RkmTClSDkxto7hsAGasmAki1PRH3KR",
-"https://www.youtube.com/watch?v=bIdskw9pKM8",
-"https://www.youtube.com/watch?v=zhnZbsmF06s",
-"https://www.youtube.com/watch?v=j1MHz_X9Uxs",
-"https://www.youtube.com/watch?v=B2YqV_K1E40",
-"https://www.youtube.com/watch?v=3Oqdkrx97Fs",
-"https://www.youtube.com/watch?v=rLEkkm1WQ3M"
-]
+
 
 client.on('guildMemberAdd', member => {
     member.guild.channels.get('366830234726694913').send('Hello! **' + member.user.username + '**, Welcome To RoaringArcanine I hope that you will enjoy your stay here and have fun! \nPlease make sure to read the rules'); 
@@ -44,54 +28,32 @@ client.on('message', message => {
 		 message.channel.send(`Pong! :ping_pong:  \`${Date.now() - message.createdTimestamp} ms\``);
 	}
 });
+
+
 client.on('message', message => {
 	if (message.author === client.user) return;
 	if (message.content.startsWith(prefix + 'channel')) {
 	const embed = new Discord.RichEmbed()
-  .setTitle("Roaring Arcanine")
-  .setAuthor("Selobgo", "https://cdn.discordapp.com/avatars/178135668755660800/983c6252aabb009d8b7507e8f1e14185.jpg")
+  .setTitle("Arctoise")
+  .setAuthor("Atherox", "https://cdn.discordapp.com/avatars/181472986920910850/e20d43987fdc80f039ac8465a4c5a232.jpg?size=1024")
   /*
    * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
    */
   .setColor(0xFFA500)
-  .setDescription("Hello everyone! Roaring Arcanine here. I am mainly a let's play Pokemon channel. I'm pretty chill and always up for challenges.")
-  .setThumbnail("https://cdn.discordapp.com/attachments/361503144615870464/365396318459396098/LYLw4kBe.jpg")
+  .setDescription("Yo, what's up guys Jack from Arctoise here! My channel is based on Top 5's, Streams, Let's play and a whole lot more!")
+  .setThumbnail("https://cdn.discordapp.com/attachments/373987435299733504/447866468433133579/IREAy5KP_1.jpg")
   /*
    * Takes a Date object, defaults to current date.
    */
   .setTimestamp()
-  .setURL("https://www.youtube.com/channel/UC-lJne5adEP6NNnV8zF4ycg")
+  .setURL("https://www.youtube.com/channel/UC29KbqOg-Ssiwbn-9p5dj5w/about")
   
 
   message.channel.send({embed});
 	}
 });
 
-client.on('message', message => {
-	if (message.author === client.user) return;
-	if (message.content.startsWith(prefix + 'randomvideo')) {
-	var selectVideo = randomVideo[Math.floor(Math.random() * randomVideo.length)];
-		const embed = new Discord.RichEmbed()
-  .setTitle("> Click for a random video <")
-  .setAuthor("Selobgo", "https://cdn.discordapp.com/avatars/178135668755660800/983c6252aabb009d8b7507e8f1e14185.jpg")
-  /*
-   * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
-   */
-  .setColor(0xFFA500)
-  
-  .setThumbnail("https://cdn.discordapp.com/attachments/361503144615870464/365396318459396098/LYLw4kBe.jpg")
-  /*
-   * Takes a Date object, defaults to current date.
-   */
-  .setTimestamp()
-  .setURL(selectVideo)
-  
 
-  message.channel.send({embed});
-		
-		 
-	}
-});
 client.on('message', message => {
 	if (message.author === client.user) return;
 	if (message.content.startsWith(prefix + 'lastvideo')) {
