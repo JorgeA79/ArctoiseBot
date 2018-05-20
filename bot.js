@@ -11,7 +11,7 @@ var lastvideoxd = "https://www.youtube.com/watch?v=EpUMsBeDy1g"
 
 
 client.on('guildMemberRemove', member => {
-    member.guild.channels.get('447867771007533056').send('**' + member.user.username + '**has left Oof.'); 
+    member.guild.channels.get('447867771007533056').send('**' + member.user.username + '** has left Oof.'); 
 });
 client.on('guildMemberAdd', member => {
     member.guild.channels.get('447867771007533056').send('Welcome to The Lair **' + member.user.username + '**! You will be given your role shortly!'); 
